@@ -9,8 +9,6 @@ const PORT = process.env.PORT || 3001;
 // implement formatting of data using middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// uncomment below if front-end is added to public folder later
-// app.use(express.static('public'));
 
 // directory
 app.use(require('./routes'));
