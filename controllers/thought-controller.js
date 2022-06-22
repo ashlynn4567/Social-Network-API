@@ -38,8 +38,7 @@ const thoughtController = {
             .catch(err => {
                 console.log(err);
                 res.status(400).json(err);
-            })
-
+            });
     }, 
 
     // add thought to user
@@ -53,13 +52,7 @@ const thoughtController = {
                     { new: true }
                 );
             })
-            .then(dbThoughtData => {
-                if (!dbThoughtData) {
-                    res.status(404).json({ message: "No thought found with this id! "})
-                    return;
-                };    
-                res.json(dbThoughtData);
-            })
+            .then(dbThoughtData => res.json(dbThoughtData))
             .catch(err => {
                 console.log(err);
                 res.status(400).json(err);
