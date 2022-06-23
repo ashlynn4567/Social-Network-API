@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.4.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "032.challenge18-socialnetworkapi",
+  "description": "This is my sixteenth challenge assignment for the University of Oregon Coding Bootcamp 2022. In this project, I use MongoDB, a NoSQL database, and Mongoose.js, an Object-Document Mapper (ODM), to create a RESTful API for a social networking application.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashlynn4567/Social-Network-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashlynn4567/Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/ashlynn4567/Social-Network-API#readme"
+}
