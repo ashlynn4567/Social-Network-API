@@ -29,14 +29,15 @@ This application can be invoked using the command `npm start`, which starts the 
 
 <p align="center">
 <img alt="A demonstration gif that shows the user navigating to 'localhost:3001/api/users' to retrieve all the users from the database. Users can also navigate to 'localhost:3001/api/users/[user_id]' to retrieve the user specified by the id provided." src="./assets/images/social-network-demo.gif"/>
+<br>Here's a <a href="https://drive.google.com/file/d/1K8UI3zWRLZpC5L3iQfeOtkIoDNwqa8Wu/view" target="_blank">link</a> to the video version of the above gif.
 </p>
 
 2. Manage Users:
    - Using a POST request to the api endpoint `localhost:3001/api/users` will create a new user, as long as they have provided the necessary information. Follow the JSON data structure below for creating users:
    ```
    {
-       "username": "[user-name]",
-       "email": "[email]"
+      "username": "[user-name]",
+      "email": "[email]"
    }
    ```
    - Users can also navigate to `localhost:3001/api/users/[user_id]` and use a PUT request in order to update the user specified by the id provided.
@@ -44,6 +45,7 @@ This application can be invoked using the command `npm start`, which starts the 
 
 <p align="center">
 <img alt="A demonstration gif that shows the user navigating to 'localhost:3001/api/users'  and using a POST request to create a new user in the database. Users can also navigate to 'localhost:3001/api/users/[user_id]' and use a PUT request to update the user of the specified id. They can use a delete request at the same URL to delete that user." src="./assets/images/social-network-demo-2.gif"/>
+<br>Here's a <a href="https://drive.google.com/file/d/1Pa_IrYMPtGk-VVL0n0wJmbMfcW61-oN0/view" target="_blank">link</a> to the video version of the above gif.
 </p>
 
 3. Manage Friends:
@@ -52,6 +54,7 @@ This application can be invoked using the command `npm start`, which starts the 
 
 <p align="center">
 <img alt="A demonstration gif using a POST request to the api endpoint `localhost:3001/api/users/[user_id]/friends/[friend_id]` to add a new friend to the specified user. At the same URL with a DELETE request deletes the friend from the user." src="./assets/images/social-network-demo-3.gif"/>
+<br>Here's a <a href="https://drive.google.com/file/d/1lFS-3ORZYnVGgV1nAMe2rIg7Y3_VU8-z/view" target="_blank">link</a> to the video version of the above gif.
 </p>
 
 4. Get Thoughts:
@@ -60,15 +63,16 @@ This application can be invoked using the command `npm start`, which starts the 
 
 <p align="center">
 <img alt="A demonstration gif that shows the user navigating to 'localhost:3001/api/thoughts' to retrieve all the thoughts from the database. Users can also navigate to 'localhost:3001/api/thoughts/[thought_id]' to retrieve the thought specified by the id provided." src="./assets/images/social-network-demo-4.gif"/>
+<br>Here's a <a href="https://drive.google.com/file/d/1cinjaTmP7dK0oP59TKlWy4X6uopDk4Yl/view" target="_blank">link</a> to the video version of the above gif.
 </p>
 
 5. Manage Thoughts:
    - Using a POST request to the api endpoint `localhost:3001/api/thoughts` will create a new thought, as long as they have provided the necessary information. Follow the JSON data structure below for creating thoughts:
    ```
    {
-       "thoughtText": "[thought_text]",
-       "userId": "[user_id]"
-       "username": "[username]"
+      "thoughtText": "[thought_text]",
+      "userId": "[user_id]"
+      "username": "[username]"
    }
    ```
    - Users can also navigate to `localhost:3001/api/thoughts/[thought_id]` and use a PUT request in order to update the thought specified by the id provided.
@@ -76,20 +80,23 @@ This application can be invoked using the command `npm start`, which starts the 
 
 <p align="center">
 <img alt="A demonstration gif that shows a user using a POST request to the api endpoint `localhost:3001/api/thoughts` to create a new thought. Navigating to `localhost:3001/api/thoughts/[thought_id]` with a PUT request will update the thought specified by the id provided. Using a DELETE request to the same URL will delete the specified thought." src="./assets/images/social-network-demo-5.gif"/>
+<br>Here's a <a href="https://drive.google.com/file/d/1ELGBQV9BqsxKKvbMxeuncbKcnc4-mvHQ/view" target="_blank">link</a> to the video version of the above gif.
 </p>
 
 6. Manage Reactions:
    - Using a POST request to the api endpoint `localhost:3001/api/thoughts/[thought_id]/reactions` will create a new reaction associated with the thought provided, as long as they have provided the necessary information. Follow the JSON data structure below for creating reactions:
    ```
    {
-       "reactionBody": "[reaction_text]",
-       "username": "[user-name]"
+      "reactionBody": "[reaction_text]",
+      "userId": "[user_id]"
+      "username": "[user-name]"
    }
    ```
    - Users can also navigate to `localhost:3001/api/thoughts/[thought_id]/reactions/[reaction_id]` and use a DELETE request in order to delete the reaction specified at the thought specified by the id provided.
 
 <p align="center">
 <img alt="A demonstration gif of a user using a POST request to the api endpoint `localhost:3001/api/thoughts/[thought_id]/reactions` too create a new reaction associated with the thought provided. Users can also navigate to `localhost:3001/api/thoughts/[thought_id]/reactions/[reaction_id]` and use a DELETE request in order to delete the reaction specified." src="./assets/images/social-network-demo-6.gif"/>
+<br>Here's a <a href="https://drive.google.com/file/d/1ujbeQ8HfbvEbaoxvDomjFOrN6iLqw44m/view" target="_blank">link</a> to the video version of the above gif.
 </p>
 
 ## Installation
