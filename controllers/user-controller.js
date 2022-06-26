@@ -3,11 +3,11 @@ const { User } = require("../models");
 
 const userController = {
     // get all users
-    getAllUsers() {
+    getAllUsers(req, res) {
         User
             .find({})
             .populate({
-                path: "thought", 
+                path: "thoughts", 
                 select: "-__v"
             })
             .select("-__v")
@@ -20,11 +20,11 @@ const userController = {
     },
 
     // get ONE user by id
-    getOneUser() {
+    getOneUser({ params }, res) {
         User
             .findOne({ _id: params.id })
             .populate({
-                path: "thought", 
+                path: "thoughts", 
                 select: "-__v"
             })
             .select("-__v")
@@ -42,16 +42,10 @@ const userController = {
     },
 
     // create new user
-    createUser() {
+    createUser({ body }, res) {
         User
             .create(body)
-            .then(dbUserData => {
-                if (!dbUserData) {
-                    res.status(404).json({ message: "No user found with this id! "})
-                    return;
-                };    
-                res.json(dbUserData);
-            })
+            .then(dbUserData => res.json(dbUserData))
             .catch(err => {
                 console.log(err);
                 res.status(400).json(err);
@@ -59,7 +53,7 @@ const userController = {
     },
 
     // update user by id
-    updateUser() {
+    updateUser({ params, body }, res) {
         User
             .findOneAndUpdate(
                 { _id: params.id },
@@ -83,7 +77,7 @@ const userController = {
     },
 
     // add friend to user
-    addFriend() {
+    addFriend({ params }, res) {
         User
             .findOneAndUpdate(
                 { _id: params.id },
@@ -111,7 +105,7 @@ const userController = {
     },
 
     // delete user by id
-    deleteUser() {
+    deleteUser({ params }, res) {
         User
             .findOneAndDelete({ _id: params.id })
             .then(dbUserData => res.json(dbUserData))
@@ -122,7 +116,7 @@ const userController = {
     },
 
     // delete friend by id
-    deleteFriend() {
+    deleteFriend({ params }, res) {
         User
             .findOneAndUpdate(
                 { _id: params.id },
