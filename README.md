@@ -43,7 +43,7 @@ This application can be invoked using the command `npm start`, which starts the 
    - Using the same URL as above, users can use a DELETE request to delete the user at the specified ID.
 
 <p align="center">
-<img alt="[insert later]" src="./assets/images/social-network-demo-2.gif"/>
+<img alt="A demonstration gif that shows the user navigating to 'localhost:3001/api/users'  and using a POST request to create a new user in the database. Users can also navigate to 'localhost:3001/api/users/[user_id]' and use a PUT request to update the user of the specified id. They can use a delete request at the same URL to delete that user." src="./assets/images/social-network-demo-2.gif"/>
 </p>
 
 3. Manage Friends:
@@ -51,7 +51,7 @@ This application can be invoked using the command `npm start`, which starts the 
    - Users can also navigate to the same URL as above and use a DELETE request to delete the specified friend from the specified user.
 
 <p align="center">
-<img alt="[insert later]" src="./assets/images/social-network-demo-3.gif"/>
+<img alt="A demonstration gif using a POST request to the api endpoint `localhost:3001/api/users/[user_id]/friends/[friend_id]` to add a new friend to the specified user. At the same URL with a DELETE request deletes the friend from the user." src="./assets/images/social-network-demo-3.gif"/>
 </p>
 
 4. Get Thoughts:
@@ -67,14 +67,15 @@ This application can be invoked using the command `npm start`, which starts the 
    ```
    {
        "thoughtText": "[thought_text]",
-       "username": "[user-name]"
+       "userId": "[user_id]"
+       "username": "[username]"
    }
    ```
    - Users can also navigate to `localhost:3001/api/thoughts/[thought_id]` and use a PUT request in order to update the thought specified by the id provided.
    - Using the same URL as above, users can use a DELETE request to delete the thought at the specified ID.
 
 <p align="center">
-<img alt="[insert later]" src="./assets/images/social-network-demo-5.gif"/>
+<img alt="A demonstration gif that shows a user using a POST request to the api endpoint `localhost:3001/api/thoughts` to create a new thought. Navigating to `localhost:3001/api/thoughts/[thought_id]` with a PUT request will update the thought specified by the id provided. Using a DELETE request to the same URL will delete the specified thought." src="./assets/images/social-network-demo-5.gif"/>
 </p>
 
 6. Manage Reactions:
@@ -88,7 +89,7 @@ This application can be invoked using the command `npm start`, which starts the 
    - Users can also navigate to `localhost:3001/api/thoughts/[thought_id]/reactions/[reaction_id]` and use a DELETE request in order to delete the reaction specified at the thought specified by the id provided.
 
 <p align="center">
-<img alt="[insert later]" src="./assets/images/social-network-demo-6.gif"/>
+<img alt="A demonstration gif of a user using a POST request to the api endpoint `localhost:3001/api/thoughts/[thought_id]/reactions` too create a new reaction associated with the thought provided. Users can also navigate to `localhost:3001/api/thoughts/[thought_id]/reactions/[reaction_id]` and use a DELETE request in order to delete the reaction specified." src="./assets/images/social-network-demo-6.gif"/>
 </p>
 
 ## Installation
@@ -105,7 +106,7 @@ For further help with installation, please refer to the below demonstration vide
 
 <p align="center">
 <img alt="A demonstration gif showing how to clone the repository to your local machine, install all necessary dependencies, and start the server." src="./assets/images/social-network-demo-7.gif"/>
-<br>Here's a <a href="[insert later]" target="_blank">link</a> to the video version of the above gif.
+<br>Here's a <a href="https://drive.google.com/file/d/1iRR5uPejoJflHy-VNW_as2M_jMB9MziZ/view" target="_blank">link</a> to the video version of the above gif.
 </p>
 
 ## Technologies

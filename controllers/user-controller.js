@@ -15,7 +15,7 @@ const userController = {
             .then(dbUserData => res.json(dbUserData))
             .catch(err => {
                 console.log(err);
-                res.status(400).json(err);
+                res.status(500).json(err);
             });
     },
 
@@ -37,7 +37,7 @@ const userController = {
             })
             .catch(err => {
                 console.log(err);
-                res.status(400).json(err);
+                res.status(500).json(err);
             });
     },
 
@@ -48,7 +48,7 @@ const userController = {
             .then(dbUserData => res.json(dbUserData))
             .catch(err => {
                 console.log(err);
-                res.status(400).json(err);
+                res.status(500).json(err);
             });
     },
 
@@ -68,11 +68,11 @@ const userController = {
                     res.status(404).json({ message: "No user found with this id! "})
                     return;
                 };    
-                res.json(dbUserData);
+                res.json({ message: "User updated successfully!" });
             })
             .catch(err => {
                 console.log(err);
-                res.status(400).json(err);
+                res.status(500).json(err);
             });
     },
 
@@ -96,11 +96,11 @@ const userController = {
                     res.status(404).json({ message: "No user found with this id! "})
                     return;
                 };    
-                res.json(dbUserData);
+                res.json({ message: "Friend added successfully!" });
             })
             .catch(err => {
                 console.log(err);
-                res.status(400).json(err);
+                res.status(500).json(err);
             });
     },
 
@@ -108,10 +108,10 @@ const userController = {
     deleteUser({ params }, res) {
         User
             .findOneAndDelete({ _id: params.id })
-            .then(dbUserData => res.json(dbUserData))
+            .then(() => res.json({ message: "User deleted successfully!" }))
             .catch(err => {
                 console.log(err);
-                res.status(400).json(err);
+                res.status(500).json(err);
             });
     },
 
@@ -135,11 +135,11 @@ const userController = {
                     res.status(404).json({ message: "No user found with this id! "})
                     return;
                 };    
-                res.json(dbUserData);
+                res.json({ message: "Friend deleted successfully!" });
             })
             .catch(err => {
                 console.log(err);
-                res.status(400).json(err);
+                res.status(500).json(err);
             });
     }
 };
