@@ -132,7 +132,7 @@ In the future, I would like to add the following improvements:
 - This application focused on building the back-end for a potential website, but it's all ready to go for a user friendly front-end interface!
 - The front-end of this website could use some filtering. It might be nice to be able to search for thoughts by keywords, or even search for users in order to add them as a friend.
 
-I'm always interested in refactoring code to improve it's functionality. If you would like to suggest your own improvements, you can reach our development team at the links below.
+I'm always interested in refactoring code to improve it's functionality. If you would like to suggest your own improvements, you can reach me at the links below.
 
 - <a href="mailto:ashlynn4567@gmail.com">Email</a>
 - <a href="https://github.com/ashlynn4567">GitHub</a>
